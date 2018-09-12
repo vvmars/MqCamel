@@ -13,8 +13,22 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14
+    //testCompile group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.25'
+
+
+
     // https://mvnrepository.com/artifact/com.h2database/h2
-    testCompile group: 'com.h2database', name: 'h2', version: '1.4.197'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.197'
+//    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
+//    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.0.4.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+    compile group: 'org.springframework', name: 'spring-core', version: '5.0.9.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework/spring-context
     compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
     //compile("org.springframework:spring-context:4.3.5.RELEASE")
@@ -22,11 +36,11 @@ dependencies {
 
     //compile 'org.springframework.boot:spring-boot-starter-activemq'
     //compile 'org.springframework.data:spring-data-commons'
-    compile 'org.apache.camel:camel-spring-boot-starter:2.18.2'
-    compile 'org.apache.activemq:activemq-camel:5.14.3'
-    compile 'org.apache.camel:camel-xmljson:2.18.2'
-    compile 'org.apache.camel:camel-saxon:2.18.2'
-    compile 'org.apache.camel:camel-spring'
-    compile 'org.apache.camel:camel-jsonpath:2.18.2'
-    compile 'org.projectlombok:lombok:1.14.4'
+//    compile 'org.apache.camel:camel-spring-boot-starter:2.18.2'
+//    compile 'org.apache.activemq:activemq-camel:5.14.3'
+//    compile 'org.apache.camel:camel-xmljson:2.18.2'
+//    compile 'org.apache.camel:camel-saxon:2.18.2'
+//    compile 'org.apache.camel:camel-spring'
+//    compile 'org.apache.camel:camel-jsonpath:2.18.2'
+//    compile 'org.projectlombok:lombok:1.14.4'
 }
