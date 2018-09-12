@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'JavaDev'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    testCompile group: 'com.h2database', name: 'h2', version: '1.4.197'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
+    //compile("org.springframework:spring-context:4.3.5.RELEASE")
+
+
+    //compile 'org.springframework.boot:spring-boot-starter-activemq'
+    //compile 'org.springframework.data:spring-data-commons'
+    compile 'org.apache.camel:camel-spring-boot-starter:2.18.2'
+    compile 'org.apache.activemq:activemq-camel:5.14.3'
+    compile 'org.apache.camel:camel-xmljson:2.18.2'
+    compile 'org.apache.camel:camel-saxon:2.18.2'
+    compile 'org.apache.camel:camel-spring'
+    compile 'org.apache.camel:camel-jsonpath:2.18.2'
+    compile 'org.projectlombok:lombok:1.14.4'
+}
