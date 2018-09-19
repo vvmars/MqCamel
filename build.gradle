@@ -16,7 +16,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
-    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+    //compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14
     //testCompile group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.25'
 
@@ -31,6 +31,8 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-core', version: '5.0.9.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework/spring-context
     compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-test
+    testCompile group: 'org.springframework', name: 'spring-test', version: '5.0.9.RELEASE'
     //compile("org.springframework:spring-context:4.3.5.RELEASE")
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-activemq', version: '2.0.5.RELEASE'

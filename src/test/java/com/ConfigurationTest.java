@@ -2,18 +2,19 @@ package com;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import static org.junit.Assert.*;
-
-@Ignore
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = Configuration.class)
 public class ConfigurationTest {
     @Autowired
     Connection con;
@@ -27,7 +28,8 @@ public class ConfigurationTest {
     public void getConnection() {
         try (Statement st = con.createStatement();
              ResultSet rs = st.executeQuery("SELECT 1+1")){
-                Assert.assertEquals(2, rs);
+            while (rs.next())
+                Assert.assertEquals(2, rs.getInt(1));
         } catch (SQLException e) {
             e.printStackTrace();
         }
