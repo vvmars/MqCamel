@@ -11,9 +11,9 @@ public class DataRouter extends RouteBuilder {
 //        from("QUEUE" + "?concurrentConsumers=" + "CONSUMER_THREADS")
 //                .log("Start: correlation_id=${header.MCP_CORRELATION_ID}, action=validate1000")
 //                .setHeader("INCOMING_QUEUE", constant("1000_0409")).to("direct:process-validation");
-        from("file:src/main/resources/in?autoCreate=false")
+        from("file:data/in?noop=true&autoCreate=false")
                 .log("@@@test@@@")
                 .convertBodyTo(String.class)
-                .to("file:src/main/resources/out?autoCreate=false");
+                .to("file:data/out?autoCreate=false");
     }
 }

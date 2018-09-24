@@ -18,7 +18,7 @@ public class Application {
         CamelContext context1 = new DefaultCamelContext();
         context1.addRoutes(new DataRouter());
         context1.start();
-        Thread.sleep(30000);
+        Thread.sleep(10000);
         context1.stop();
 
     }
