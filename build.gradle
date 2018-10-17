@@ -28,14 +28,17 @@ dependencies {
 //    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.0.4.RELEASE'
 
     // https://mvnrepository.com/artifact/org.springframework/spring-core
-    compile group: 'org.springframework', name: 'spring-core', version: '5.0.9.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '5.1.1.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework/spring-context
-    compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.1.1.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework/spring-test
-    testCompile group: 'org.springframework', name: 'spring-test', version: '5.0.9.RELEASE'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '5.1.1.RELEASE'
     //compile("org.springframework:spring-context:4.3.5.RELEASE")
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-activemq', version: '2.0.5.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.1.RELEASE'
 
 
     // https://mvnrepository.com/artifact/org.apache.activemq/activemq-core
